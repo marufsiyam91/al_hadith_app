@@ -36,3 +36,17 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
+.hadithcard_scrollar::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+.hadithcard_scrollar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
+}
+
+.hadithcard_scrollar::-webkit-scrollbar-thumb {
+  background-color: #979797;
+  border-radius: .5rem;
+}

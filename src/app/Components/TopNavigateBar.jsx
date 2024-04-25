@@ -13,20 +13,23 @@ const TopNavigateBar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between p-4 h-[80px]">
-      <div className="flex items-center gap-4">
-        <span className="py-[8px] px-[8px] rounded-lg text-2xl border border-[#2B9E76] text-[#2B9E76]">
+    <div className="flex items-center justify-between p-4 h-[60px] xl:h-[80px]">
+      <div className="flex items-center gap-2 sm:gap-4">
+        <span className="py-[8px] px-[8px] rounded-lg text-xl xl:text-2xl border border-[#2B9E76] text-[#2B9E76]">
           <ImBooks />
         </span>
-        <div>
+        <div className="xl:block hidden">
           <h2 className="text-lg font-semibold font-primaryFont">হাদিস সমূহ</h2>
           <p className="text-md">হাদিস পড়ুন শিখুন এবং জানুন</p>
         </div>
+        <div>
+          <h2 className="sm:text-2xl text-lg text-[#2B9E76] block xl:hidden font-semibold font-primaryFont">আল হাদিস</h2>
+        </div>
       </div>
 
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-2 sm:gap-4 items-center">
         <label className="flex items-center p-3 border-2 rounded-xl gap-4 bg-slate-200 xl:bg-white">
-          <span className="text-xl">
+          <span className="text-lg xl:text-xl">
             <IoSearchOutline />
           </span>
           <input
@@ -43,7 +46,7 @@ const TopNavigateBar = () => {
         </button>
         <button
           onClick={() => setIsShowSettings(true)}
-          className="block 4xl:hidden p-3 text-xl bg-[#2B9E76] text-white rounded-lg"
+          className="block 4xl:hidden p-3 text-lg bg-[#2B9E76] text-white rounded-lg"
         >
           <IoSettingsSharp />
         </button>
@@ -51,7 +54,7 @@ const TopNavigateBar = () => {
         <div className="4xl:hidden block">
         {isShowSettings && 
         (<>
-          <div className="w-full h-[100vh] fixed top-0 left-0 bg-black opacity-30">
+          <div className="w-full h-[100vh] fixed top-0 left-0 bg-black opacity-50">
 
           </div>
           <Settingsbar handleClose={handleClose} /> 

@@ -5,7 +5,7 @@ const Settings = ({handleClose}) => {
   return (
     <div className="w-full bg-white rounded-2xl p-4">
       <div className="flex items-center justify-between">
-        <h3 className="text-center mb-4 txt-2xl ">সেটিংস</h3>
+        <h3 className="text-center mb-4 text-3xl 4xl:txt-2xl">সেটিংস</h3>
         <button onClick={() => handleClose()} className="block 4xl:hidden text-2xl"><VscClose /></button>
       </div>
         <p className="mb-2">আরবি ফন্ট সিলেক্ট করুন</p>
