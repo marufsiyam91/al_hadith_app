@@ -18,13 +18,15 @@ const Settings = ({handleClose}) => {
           </select>
 
           <p className="my-2">এরাবিক ফন্ট সাইজ</p>
-          <input className="w-full h-[5px] appearance-none bg-[#EEEEEE] rounded-xl accent-[#2B9E76] range" type="range" name="font-size"  min={18} max={40} id="" />
+          <input className="w-full h-[8px] appearance-none bg-[#EEEEEE] rounded-xl accent-[#2B9E76] range overflow-hidden" type="range" name="font-size"  min={18} max={40} id="" />
 
           <p lassName="my-2">অনুবাদ ফন্ট সাইজ</p>
-          <input className="w-full h-[5px]  appearance-none bg-[#EEEEEE] rounded-xl accent-[#2B9E76] range" type="range" name="font-size"  min={14} max={25} id="" />
-        <div>
+          <input className="w-full h-[8px]  appearance-none bg-[#EEEEEE] rounded-xl accent-[#2B9E76] range overflow-hidden" type="range" name="font-size"  min={14} max={25} id="" />
+        <div className="flex items-center  justify-between mt-4">
             <p>নাইট মোড</p>
-            <button></button>
+            <button className="border p-[1px] w-10 flex-flex-start rounded-2xl bg-gray-200">
+              <div className="w-4 h-4 bg-white rounded-full"></div>
+            </button>
         </div>
     </div>
   )

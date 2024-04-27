@@ -91,8 +91,10 @@ body {
 
 .range::-webkit-slider-thumb{
   appearance: none;
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
+  border: 1px solid white;
   background: #2B9E76;
+  box-shadow: -404px 0 0 400px #2B9E76;
 }
