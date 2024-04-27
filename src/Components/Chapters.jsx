@@ -36,7 +36,7 @@ const Chapters = () => {
     }
 
     return (
-        <div className=" px-4 bg-white">
+        <div className=" bg-white">
             {
                 chapters.map(chapter => (
                     <div className="flex items-center gap-2 bg-green-50 px-4 py-6 rounded-xl" key={chapter.id}>

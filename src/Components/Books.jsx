@@ -8,6 +8,8 @@ const Books = () => {
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState(null)
     const [Books, setBooks] = useState([])
+
+    console.log(Books)
     
     useEffect(() => {
         const fetchData = async () => {

@@ -160,11 +160,14 @@ const HadithCard = () => {
                 }
             </div>
 
-            <div className="w-full h-auto bg-white rounded-xl 2xl:flex flex-col gap-4 ">
+            <div className="w-full h-auto bg-white rounded-xl 2xl:flex flex-col gap-4 p-4">
                 {
                     chapter.map(schapter => (
-                        <div>
-                            
+                        <div className="flex gap-4 items-center" key={schapter.id}>
+                            <div className="w-10 h-10 bg-[#2B9E76] flex items-center justify-center text-white rounded-xl">
+                                {schapter.id}
+                            </div>
+                            <h2 className="text-2xl">{schapter.title}</h2>
                         </div>
                     ))
                 }
