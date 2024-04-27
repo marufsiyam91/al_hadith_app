@@ -1,10 +1,12 @@
-import BookBar from "./Components/BookBar";
-import SideNav from "./Components/SideNav";
-import TopNavigateBar from "./Components/TopNavigateBar";
-import HadithCard from './Components/HadithCard';
-import Settingsbar from "./Components/Settingsbar";
+import BookBar from "@/Components/BookBar";
+import SideNav from "@/Components/SideNav";
+import TopNavigateBar from "@/Components/TopNavigateBar";
+import HadithCard from '@/Components/HadithCard';
+import Settingsbar from "@/Components/Settingsbar";
 
-export default function Home() {
+export default function Home({data}) {
+  console.log(data, 'fetched or not')
+
   return (
     <main className="h-[100vh] w-full bg-white overflow-hidden">
       <TopNavigateBar/>
@@ -15,6 +17,7 @@ export default function Home() {
         <div className="w-full h-[calc(100vh-120px)] xl:h-[calc(100vh-80px)] xl:rounded-tl-[30px] bg-[#F2F4F6] flex gap-4 p-4">
           <div className="2xl:block hidden">
             <BookBar/>
+              {console.log('BookBar imported')}
           </div>
           <div className="w-full h-full">
             <HadithCard/>

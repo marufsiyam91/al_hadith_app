@@ -26,9 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-input[type="range"]::-webkit-slider-thumb {
-  background-color:'#2B9E76';
-}
 
 @layer utilities {
   .text-balance {
@@ -38,15 +35,64 @@ input[type="range"]::-webkit-slider-thumb {
 
 .hadithcard_scrollar::-webkit-scrollbar {
   width: 5px;
+  border-radius: 2px;
   background: transparent;
 }
 
 .hadithcard_scrollar::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background: rgba(0, 0, 0, 0);
 }
 
 .hadithcard_scrollar::-webkit-scrollbar-thumb {
   background-color: #979797;
-  border-radius: .5rem;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .slidefromLeft{
+    animation: slideFromLeft 0.6s ease-in-out forwards
+  }
+
+  .bookbar-back{
+    animation: slideFromLeft 0.3s ease forwards;
+  }
+}
+
+
+@media (max-width: 1535px) {
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+  .settingbarAppear{
+    animation: slideFromRight 0.6s ease-in-out forwards;
+  }
+
+  .transparent-back{
+    animation: slideFromRight 0.3s ease forwards;
+  }
+
+}
+
+.range::-webkit-slider-thumb{
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2B9E76;
 }

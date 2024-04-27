@@ -54,10 +54,10 @@ const TopNavigateBar = () => {
         <div className="4xl:hidden block">
         {isShowSettings && 
         (<>
-          <div className="w-full h-[100vh] fixed top-0 left-0 bg-black opacity-50">
+          <div className="w-full h-[100vh] fixed z-10 top-0 left-0 bg-black opacity-50 transparent-back">
 
           </div>
-          <Settingsbar handleClose={handleClose} /> 
+          <Settingsbar handleClose={handleClose} />
         </>)
         }
         </div>

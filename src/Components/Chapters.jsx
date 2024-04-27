@@ -1,6 +1,6 @@
 'use client'
 import {useEffect, useState} from "react";
-import getAllChapters from "../../../lib/getAllChapters";
+import getAllChapters from "../../lib/getAllChapters";
 import { TbHexagonFilled } from "react-icons/tb";
 
 
